@@ -1,0 +1,62 @@
+.red-text {
+  color: red;
+}
+
+body {
+  background-image: url("https://i.ibb.co/BHpDzXj/istockphoto-505487687-170667a.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+form input[type="text"] {
+  width: 300px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  background-color: #a1bcf0;
+}
+
+form button[type="submit"] {
+  padding: 15px 50px;
+  background-color: #27870a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #062a4b;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+table th {
+  background-color: #062a4b;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
