@@ -108,16 +108,3 @@ form.addEventListener('submit', (event) => {
 
 // Call the updateTimes function every minute
 setInterval(updateTimes, 60000);
-
-// Exportează array-ul într-un fișier text
-const content = JSON.stringify(nodes, null, 2);
-const blob = new Blob([content], { type: 'text/plain' });
-const url = URL.createObjectURL(blob);
-
-// Creează un element de ancoră pentru a descărca fișierul
-const downloadLink = document.createElement('a');
-downloadLink.href = url;
-downloadLink.download = 'nodes.txt';
-
-// Simulează un clic pe elementul de ancoră pentru a descărca fișierul
-downloadLink.click();
