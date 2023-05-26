@@ -62,10 +62,8 @@ function addNodeToDatabase(nodeName, nodeAddress) {
 function getTimeSinceLastTransaction(nodeAddress, callback) {
   $.getJSON(`https://blockexplorer.bloxberg.org/api?module=account&action=txlist&address=${nodeAddress}`, function(data) {
     const transactions = data.result;
-    const latestTimestamp = transactions[Last Hour].timeStamp;
+    const latestTimestamp = transactions[0].timeStamp;
     const now = Math.floor(Date.now() / 1000);
-    const secondsSinceLastTransaction = now - latestTimestamp;
-    const hoursSinceLastTransaction = Math.floor(secondsSinceLastTransaction / 3600);
     const minutesSinceLastTransaction = Math.floor((secondsSinceLastTransaction % 3600) / 60);
     const timeSinceLastTransaction = hoursSinceLastTransaction + ' h ';
     callback(timeSinceLastTransaction);
